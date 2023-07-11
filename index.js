@@ -1,5 +1,3 @@
-// 화이팅
-//화이팅팅
 const button = document.getElementById("inputForm--button"); //+버튼
 let add = document.getElementById("inputForm--add"); //todolist추가
 let remove = document.getElementById("delete"); //모두삭제
@@ -23,12 +21,6 @@ function addTodo() {
   }
 }
 
-function enterkey() {
-  if (event.keyCode == 13) {
-    addTodo(); //enter 키 눌렀을 때 addTodo 함수 실행
-  }
-}
-
 function deleteList(e) {
   //삭제 버튼(x) 클릭시
   let remove1 = e.target.parentElement; //선택한 목록 한개만 지우기
@@ -36,7 +28,7 @@ function deleteList(e) {
 }
 
 function allClearList() {
-  remove.innerText = ""; //할 일 입력햇을 때 입력창 초기화하기ㅇ
+  result.innerText = ""; //할 일 입력햇을 때 입력창 초기화하기ㅇ
 }
 
 button.addEventListener("click", addTodo);
